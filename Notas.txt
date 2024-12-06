@@ -1,0 +1,35 @@
+FALTA: 4, 7 Y 12.
+
+
+NUEVAS NOTAS
+1- LISTO. Una vez rechazada, agregar un comentario por el usuario escolar y en el perfil del maestro se debe ver un registro con la funcionalidad basica: editar registro, volver a enviar.
+
+
+2- LISTO. [OBSERVACION EN EL PUNTO 12 MAS ABAJO] Un alumno debe permanecer en un estatus de enviado o solicitado de cambio para que no se pueda volver seleccionar en la misma materia al hacer una solicitud. 
+Bloquear el alumno en base a esto para que no se pueda usar en otra solicitud de la misma materia.
+
+3- LISTO. Invierte los campos de calificacion, primero la incorrecta y luego la correcta.
+
+4.- Agregar una pantalla de solicitudes en progreso. Aqui se deben ver todas las enviadas.
+
+5. LISTO. Agrega fecha de recibido, fecha de cada firma en la tabla de solicitudes generales. Y agrega un campo de fecha en que fue declinada. (ESTO ES EL HISTORIAL) 
+
+6. LISTO. En verDetalle asegurate de que Motivo no se alargue, agrega un boton para ver mas. Esto es en coordinador.
+
+7- Agregar filtro en coordinador para ver si la solicitud esta en espera, firmada o declinada.
+
+8. LISTO. Esto es relacionado a rechazar una solicitud: Si se rechaza, hay que limpiar las firmas de la solicitud y cambiar su estado al de no enviado.
+
+9. LISTO. Que el modal para escribir el motivo sea antes de que se envie la solicitud al controlador, para que si o si se tenga que escribir algo antes de que se rechace.
+
+10. LISTO. Podrías hacer que al Rechazar, se abra un modal para escribir el motivo. Esto lo podemos guardar en una tabla nueva que tenga id, idSolicitud, idEmpleado, motivo, activo. Al guardar, por default se activa.
+
+11. LISTO. Cuando entres como docente, la solicitud rechazada debe aparecer como pendiente de envio y con un boton extra que te muestre el motivo en un modal.
+
+
+
+12.- Nota 30/10/2024. En el listado de alumnos en un grupo, a la hora de hacer una solicitud como Docente. Actualmente bloquea a los alumnos que se enceuntren
+en una solicitud pendiente o no enviada. Sin embargo, marca como disponibles a aquellos que se encuentran en una solicitud rechazada.
+Esto puede generar un duplicado en el caso de que Se cree una nueva solicitud con ese alumno y luego se reactive la solicitud rechazada, generando asi un caso 
+donde un mismo alumno está en las dos solicitudes.
+NOTA: Replicando el problema parece suceder solo cuando Escolar rechaza la solicitud.

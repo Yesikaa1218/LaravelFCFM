@@ -1,0 +1,14 @@
+Pasos seguidos para importar los datos:
+
+0- Es necesario cambiar el tipo de dato en NoEmpleado en la tabla empleados. Hay que cambiarlo por string.
+1- Se importó el archivo prefijos.csv a la tabla prefijos.
+2- Se importó listaMaestros.csv a la tabla empleados.
+3- Se importó planes.csv a la tabla plan_estudios_cambios.
+4- Se importó materiasCambios.csv a la tabla materias_cambios.
+5- Se importó empleados_materias.csv a la tabla empleados_materias.
+6- Se importó grupos.csv a la tabla grupos.
+7- Ojo hay que importar los roles a la tabla model_has_roles. 
+eN LA TABLA el rol id de docente es el numero 59. model_type es igual a App\Models\Empleado y model_id es el id correspondiente de la tabla empleados.
+8- Se importa en partes los alumnos. (Parece que solo se importan alrededor de 102 imports) 
+NOTA: (EN TEORIA YA SE PUEDE IMPORTAR COMPLETAMENTE TODO EL EXCEL, PERO RECOMIENDO DIVIDR EN 3 PARTES LOS REGISTROS).
+9- Se importa en partes a tabla grupo_alumnos.
